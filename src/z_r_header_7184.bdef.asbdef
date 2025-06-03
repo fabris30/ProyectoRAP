@@ -1,0 +1,44 @@
+managed implementation in class zbp_r_header_7184 unique;
+strict ( 2 );
+
+define behavior for Z_R_HEADER_7184 alias header
+persistent table zheader_7184
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) Idh;
+  association _Items { create; }
+}
+
+define behavior for Z_R_ITEMS_7184 alias items
+persistent table zitems_7184
+lock dependent by _Header
+authorization dependent by _Header
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly ) Id, Idh;
+  association _Header;
+
+  mapping for zitems_7184
+    {
+      Id               = id;
+      Idh              = idh;
+      Name             = name;
+      Description      = description;
+      Releasedate      = releasedate;
+      Discontinueddate = discontinueddate;
+      Price            = price;
+      CurrencyCode     = currency_code;
+      Height           = height;
+      Width            = width;
+      Depth            = depth;
+      Quantity         = quantity;
+      Unitofmeasure    = unitofmeasure;
+    }
+}

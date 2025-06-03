@@ -1,0 +1,59 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'Header',
+                     typeNamePlural: 'Headers',
+                     title: {
+                          type: #STANDARD,
+                          value: 'Idh'} } }
+       
+
+annotate entity Z_C_HEADER_7184 with
+{
+  @UI.facet: [{ id: 'Header',
+              purpose: #STANDARD,
+              type: #IDENTIFICATION_REFERENCE,
+              label: 'Header',
+              position: 10 },
+
+             { id: 'Idh',
+              purpose: #STANDARD,
+              type: #LINEITEM_REFERENCE,
+              label: 'Item',
+              targetElement: '_Items',
+              position: 20 } ]
+  @UI: { lineItem: [{ position: 10, importance: #HIGH } ],
+   identification: [{ position: 10  }] }
+  Idh;
+  
+   @UI: { lineItem: [{ position: 20, importance: #HIGH } ],
+   identification: [{ position: 20  }] }
+  Email;
+  
+   @UI: { lineItem: [{ position: 30, importance: #HIGH } ],
+   identification: [{ position: 30  }] }
+  Firstname;
+  
+  
+  @UI: { lineItem: [{ position: 40, importance: #MEDIUM } ],
+   identification: [{ position: 40  }] }
+  Lastname;
+  
+  @UI: { lineItem: [{ position: 50, importance: #MEDIUM } ],
+   identification: [{ position: 50  }] }
+  Country;
+  
+  @UI: { lineItem: [{ position: 60, importance: #HIGH } ],
+   identification: [{ position: 60  }] }
+  Createon;
+  
+  @UI: { lineItem: [{ position: 70, importance: #MEDIUM } ],
+   identification: [{ position: 70  }] }
+  Deliverydate;
+  
+  
+  @UI: { lineItem: [{ position: 80, importance: #HIGH } ],
+   identification: [{ position: 80  }] }
+  Orderstatus;
+  
+  @UI.hidden: true
+  Imageurl;
+}

@@ -2,7 +2,7 @@
 @EndUserText.label: 'Items - Consumption Entity'
 @Metadata.ignorePropagatedAnnotations: true
 
-
+@Metadata.allowExtensions: true
 
 define view entity Z_C_ITEMS_7184 
 as projection on Z_R_ITEMS_7184

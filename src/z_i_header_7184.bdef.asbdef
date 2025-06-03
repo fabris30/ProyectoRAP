@@ -1,0 +1,18 @@
+interface;
+
+define behavior for Z_I_HEADER_7184 alias Z_R_HEADER_7184
+{
+  use create;
+  use update;
+  use delete;
+
+  use association _Items { create; }
+}
+
+define behavior for Z_I_ITEMS_7184 alias Z_R_ITEMS_7184
+{
+  use update;
+  use delete;
+
+  use association _Header;
+}
