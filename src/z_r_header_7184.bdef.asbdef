@@ -10,9 +10,11 @@ authorization master ( instance )
   create ( authorization : global );
   update;
   delete;
-  field ( readonly ) Idh;
+  field ( readonly: update ) Idh;
+  field ( mandatory ) Email;
   association _Items { create; }
 }
+
 
 define behavior for Z_R_ITEMS_7184 alias items
 persistent table zitems_7184
@@ -22,7 +24,7 @@ authorization dependent by _Header
 {
   update;
   delete;
-  field ( readonly ) Id, Idh;
+  field ( readonly: update ) Id, Idh;
   association _Header;
 
   mapping for zitems_7184

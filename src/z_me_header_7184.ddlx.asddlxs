@@ -3,7 +3,8 @@
                      typeNamePlural: 'Headers',
                      title: {
                           type: #STANDARD,
-                          value: 'Idh'} } }
+                          value: 'Idh'} }
+                           }
        
 
 annotate entity Z_C_HEADER_7184 with
@@ -20,8 +21,8 @@ annotate entity Z_C_HEADER_7184 with
               label: 'Item',
               targetElement: '_Items',
               position: 20 } ]
-  @UI: { lineItem: [{ position: 10, importance: #HIGH } ],
-   identification: [{ position: 10  }] }
+  @UI: { lineItem: [{ position: 18, importance: #HIGH } ],
+   identification: [{ position: 18  }] }
   Idh;
   
    @UI: { lineItem: [{ position: 20, importance: #HIGH } ],
