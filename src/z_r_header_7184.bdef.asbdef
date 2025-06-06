@@ -13,6 +13,7 @@ authorization master ( instance )
   field ( readonly: update ) Idh;
   field ( mandatory ) Email;
   association _Items { create; }
+
 }
 
 
@@ -24,7 +25,8 @@ authorization dependent by _Header
 {
   update;
   delete;
-  field ( readonly: update ) Id, Idh;
+  field ( readonly: update ) Id;
+  field ( readonly ) Idh;
   association _Header;
 
   mapping for zitems_7184

@@ -19,7 +19,7 @@ annotate entity Z_C_ITEMS_7184
                 label: 'Items'} ]
  
   @UI: { lineItem: [{ position: 10, importance: #HIGH } ],
-   identification: [{ position: 10  }] }               
+   identification: [{ position: 10  }]}               
  Id;
  
  @UI.hidden: true
@@ -37,7 +37,7 @@ annotate entity Z_C_ITEMS_7184
    identification: [{ position: 40  }] }  
  Releasedate;  
  
- @UI: { lineItem: [{ position: 50, importance: #HIGH } ],
+ @UI: { lineItem: [{ position: 50, importance: #HIGH, label: 'PRICE' } ],
    identification: [{ position: 50  }] }  
  Price;             
  

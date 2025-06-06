@@ -20,58 +20,62 @@ METHOD if_oo_adt_classrun~main.
 
     lt_ITEMS = VALUE #(
 
-( id = 1 idh = '005638984K-1' name = 'Ergonomic Keyboard' description = 'Wireless keyboard with' releasedate = '20141010' discontinueddate = '20221201' price = 50000 currency_code = 'USD' height = 12 width = 6 depth = 10 quantity = 8 unitofmeasure = 'CM'
+( id = '1' idh = '005638984K-1' name = 'Ergonomic Keyboard' description = 'Wireless keyboard' releasedate = '20141010' discontinueddate = '20221201' price = 50000 currency_code = 'USD' height = 12 width = 6 depth = 10 quantity = 8 unitofmeasure = 'CM'
 )
-( id = 2 idh = '005638984K-1' name = 'Keyboard Wrist Rest' description = 'Gel padding for comfort' releasedate = '20151115' discontinueddate = '20230115' price = 15000 currency_code = 'USD' height = 3 width = 6 depth = 10 quantity = 12 unitofmeasure =
+( id = '2' idh = '005638984K-1' name = 'Keyboard Wrist Rest' description = 'Gel padding for comfort' releasedate = '20151115' discontinueddate = '20230115' price = 15000 currency_code = 'USD' height = 3 width = 6 depth = 10 quantity = 12 unitofmeasure =
 'CM' )
-( id = 3 idh = '005638984K-1' name = 'Keyboard Cleaner Kit' description = 'Brush and cleaning solution' releasedate = '20170305' discontinueddate = '20230520' price = 8000 currency_code = 'USD' height = 5 width = 5 depth = 5 quantity = 25 unitofmeasure =
+( id = '3' idh = '005638984K-1' name = 'Keyboard Cleaner Kit' description = 'Brush and cleaning ' releasedate = '20170305' discontinueddate = '20230520' price = 8000 currency_code = 'USD' height = 5 width = 5 depth = 5 quantity = 25 unitofmeasure =
 'CM' )
-( id = 1 idh = '005638984K-2' name = 'Mechanical Keyboard' description = 'RGB gaming keyboard with blue switches' releasedate = '20180515' discontinueddate = '20230630' price = 65000 currency_code = 'USD' height = 13 width = 5 depth = 8 quantity = 15
-unitofmeasure = 'CM' )
-( id = 2 idh = '005638984K-2' name = 'Keycap Set' description = 'Custom colored keycaps' releasedate = '20190620' discontinueddate = '20201109' price = 12000 currency_code = 'USD' height = 2 width = 5 depth = 5 quantity = 30 unitofmeasure = 'CM' )
-( id = 1 idh = '005638984K-3' name = 'Compact Keyboard' description = 'Slim profile for space-saving workspaces' releasedate = '20200120' discontinueddate = '20201109' price = 35000 currency_code = 'USD' height = 10 width = 4 depth = 7 quantity = 23
-unitofmeasure = 'CM' )
-( id = 2 idh = '005638984K-3' name = 'Keyboard Dust Cover' description = 'Silicone protective cover' releasedate = '20200218' discontinueddate = '20231015' price = 5000 currency_code = 'USD' height = 1 width = 10 depth = 7 quantity = 50 unitofmeasure =
+( id = '1' idh = '005638984K-2' name = 'Ergonomic Keyboard' description = 'Wireless keyboard' releasedate = '20141010' discontinueddate = '20221201' price = 50000 currency_code = 'USD' height = 12 width = 6 depth = 10 quantity = 8 unitofmeasure = 'CM'
+)
+( id = '2' idh = '005638984K-2' name = 'Keyboard Wrist Rest' description = 'Gel padding for comfort' releasedate = '20151115' discontinueddate = '20230115' price = 15000 currency_code = 'USD' height = 3 width = 6 depth = 10 quantity = 12 unitofmeasure =
 'CM' )
-( id = 3 idh = '005638984K-3' name = 'USB Extension Cable' description = '1m extension for peripherals' releasedate = '20210710' discontinueddate = '20201109' price = 3000 currency_code = 'USD' height = 1 width = 1 depth = 100 quantity = 100
-unitofmeasure = 'CM' )
-( id = 1 idh = '005638984K-4' name = 'Conference Speaker' description = '360° sound for meeting rooms' releasedate = '20191111' discontinueddate = '20241111' price = 120000 currency_code = 'USD' height = 15 width = 15 depth = 10 quantity = 6
-unitofmeasure = 'CM' )
-( id = 2 idh = '005638984K-4' name = 'Speaker Mount' description = 'Wall mounting bracket' releasedate = '20200822' discontinueddate = '20201109' price = 18000 currency_code = 'USD' height = 5 width = 15 depth = 5 quantity = 10 unitofmeasure = 'CM' )
-( id = 1 idh = '005638984K-5' name = 'Noise-Canceling Headset' description = 'Dual microphone for calls' releasedate = '20210305' discontinueddate = '20210822' price = 89000 currency_code = 'USD' height = 18 width = 8 depth = 5 quantity = 12
-unitofmeasure = 'CM' )
-( id = 2 idh = '005638984K-5' name = 'Headset Stand' description = 'Desktop organizer' releasedate = '20220412' discontinueddate = '20250412' price = 12000 currency_code = 'USD' height = 20 width = 10 depth = 10 quantity = 8 unitofmeasure = 'CM' )
-( id = 3 idh = '005638984K-5' name = 'Replacement Ear Pads' description = 'Premium memory foam' releasedate = '20220930' discontinueddate = '20210825' price = 9000 currency_code = 'USD' height = 2 width = 8 depth = 8 quantity = 25 unitofmeasure = 'CM' )
-( id = 1 idh = '005638984K-6' name = 'Document Scanner' description = 'Auto-feed 50 pages per minute' releasedate = '20170730' discontinueddate = '20230730' price = 140000 currency_code = 'USD' height = 15 width = 30 depth = 20 quantity = 5 unitofmeasure
-= 'CM' )
-( id = 2 idh = '005638984K-6' name = 'Scanner Maintenance Kit' description = 'Cleaning sheets and tools' releasedate = '20180815' discontinueddate = '20210820' price = 10000 currency_code = 'USD' height = 5 width = 10 depth = 5 quantity = 15
-unitofmeasure = 'CM' )
-( id = 1 idh = '005638984K-7' name = 'Portable Projector' description = 'HD resolution with built-in battery' releasedate = '20210922' discontinueddate = '20200819' price = 185000 currency_code = 'USD' height = 8 width = 12 depth = 8 quantity = 7
-unitofmeasure = 'CM' )
-( id = 2 idh = '005638984K-7' name = 'Projector Screen' description = '84" portable screen' releasedate = '20211015' discontinueddate = '20241015' price = 45000 currency_code = 'USD' height = 5 width = 84 depth = 5 quantity = 10 unitofmeasure = 'CM' )
-( id = 3 idh = '005638984K-7' name = 'Projector Carry Case' description = 'Padded protective case' releasedate = '20220110' discontinueddate = '20200815' price = 18000 currency_code = 'USD' height = 10 width = 15 depth = 10 quantity = 12 unitofmeasure =
+( id = '1' idh = '005638984K-3' name = 'Ergonomic Keyboard' description = 'Wireless keyboard' releasedate = '20141010' discontinueddate = '20221201' price = 50000 currency_code = 'USD' height = 12 width = 6 depth = 10 quantity = 8 unitofmeasure = 'CM'
+)
+( id = '2' idh = '005638984K-3' name = 'Keyboard Wrist Rest' description = 'Gel padding for comfort' releasedate = '20151115' discontinueddate = '20230115' price = 15000 currency_code = 'USD' height = 3 width = 6 depth = 10 quantity = 12 unitofmeasure =
 'CM' )
-( id = 1 idh = '005638984K-8' name = 'Wireless Presenter' description = 'Laser pointer with slide control' releasedate = '20200401' discontinueddate = '20200810' price = 25000 currency_code = 'USD' height = 2 width = 4 depth = 1 quantity = 18
-unitofmeasure = 'CM' )
-( id = 2 idh = '005638984K-8' name = 'Presenter Charging Dock' description = 'Dual charging station' releasedate = '20210520' discontinueddate = '20250520' price = 8000 currency_code = 'USD' height = 3 width = 10 depth = 5 quantity = 10 unitofmeasure =
+( id = '3' idh = '005638984K-3' name = 'Keyboard Cleaner Kit' description = 'Brush and cleaning ' releasedate = '20170305' discontinueddate = '20230520' price = 8000 currency_code = 'USD' height = 5 width = 5 depth = 5 quantity = 25 unitofmeasure =
 'CM' )
-( id = 1 idh = '005638984K-9' name = 'Dual Monitor Stand' description = 'Holds two 24" displays' releasedate = '20200618' discontinueddate = '20210520' price = 75000 currency_code = 'USD' height = 25 width = 50 depth = 30 quantity = 9 unitofmeasure =
+( id = '1' idh = '005638984K-4' name = 'Ergonomic Keyboard' description = 'Wireless keyboard' releasedate = '20141010' discontinueddate = '20221201' price = 50000 currency_code = 'USD' height = 12 width = 6 depth = 10 quantity = 8 unitofmeasure = 'CM'
+)
+( id = '2' idh = '005638984K-4' name = 'Keyboard Wrist Rest' description = 'Gel padding for comfort' releasedate = '20151115' discontinueddate = '20230115' price = 15000 currency_code = 'USD' height = 3 width = 6 depth = 10 quantity = 12 unitofmeasure =
 'CM' )
-( id = 2 idh = '005638984K-9' name = 'Monitor Stand Tray' description = 'Attachment for accessories' releasedate = '20210905' discontinueddate = '20240905' price = 15000 currency_code = 'USD' height = 5 width = 20 depth = 15 quantity = 12 unitofmeasure =
+( id = '1' idh = '005638984K-5' name = 'Ergonomic Keyboard' description = 'Wireless keyboard' releasedate = '20141010' discontinueddate = '20221201' price = 50000 currency_code = 'USD' height = 12 width = 6 depth = 10 quantity = 8 unitofmeasure = 'CM'
+)
+( id = '2' idh = '005638984K-5' name = 'Keyboard Wrist Rest' description = 'Gel padding for comfort' releasedate = '20151115' discontinueddate = '20230115' price = 15000 currency_code = 'USD' height = 3 width = 6 depth = 10 quantity = 12 unitofmeasure =
 'CM' )
-( id = 3 idh = '005638984K-9' name = 'Cable Management Kit' description = 'Clips and sleeves' releasedate = '20211115' discontinueddate = '20210520' price = 8000 currency_code = 'USD' height = 2 width = 10 depth = 5 quantity = 30 unitofmeasure = 'CM' )
-( id = 1 idh = '005638984K-10' name = 'Monitor Cleaning Kit' description = 'Screen wipes and solution' releasedate = '20200210' discontinueddate = '20211115' price = 6000 currency_code = 'USD' height = 3 width = 8 depth = 3 quantity = 25 unitofmeasure =
+( id = '3' idh = '005638984K-5' name = 'Keyboard Cleaner Kit' description = 'Brush and cleaning ' releasedate = '20170305' discontinueddate = '20230520' price = 8000 currency_code = 'USD' height = 5 width = 5 depth = 5 quantity = 25 unitofmeasure =
 'CM' )
-( id = 2 idh = '005638984K-10' name = 'Anti-Glare Filter' description = '24" monitor filter' releasedate = '20210312' discontinueddate = '20240312' price = 12000 currency_code = 'USD' height = 24 width = 1 depth = 24 quantity = 8 unitofmeasure = 'CM' )
-( id = 1 idh = '005638984K-18' name = 'Monitor Privacy Shield' description = 'Dual screen protector' releasedate = '20220518' discontinueddate = '20211115' price = 15000 currency_code = 'USD' height = 24 width = 5 depth = 24 quantity = 6 unitofmeasure =
+( id = '1' idh = '005638984K-6' name = 'Ergonomic Keyboard' description = 'Wireless keyboard' releasedate = '20141010' discontinueddate = '20221201' price = 50000 currency_code = 'USD' height = 12 width = 6 depth = 10 quantity = 8 unitofmeasure = 'CM'
+)
+( id = '2' idh = '005638984K-6' name = 'Keyboard Wrist Rest' description = 'Gel padding for comfort' releasedate = '20151115' discontinueddate = '20230115' price = 15000 currency_code = 'USD' height = 3 width = 6 depth = 10 quantity = 12 unitofmeasure =
 'CM' )
-( id = 1 idh = '005638984K-17' name = 'Monitor Arm' description = 'Adjustable VESA mount' releasedate = '20220830' discontinueddate = '20220214' price = 35000 currency_code = 'USD' height = 30 width = 30 depth = 30 quantity = 5 unitofmeasure = 'CM' )
-( id = 1 idh = '005638984K-19' name = 'Collaboration Whiteboard' description = 'Digital sticky' releasedate = '20220214' discontinueddate = '20250214' price = 250000 currency_code = 'USD' height = 120 width = 80 depth = 2 quantity = 4 unitofmeasure =
+( id = '1' idh = '005638984K-7' name = 'Ergonomic Keyboard' description = 'Wireless keyboard' releasedate = '20141010' discontinueddate = '20221201' price = 50000 currency_code = 'USD' height = 12 width = 6 depth = 10 quantity = 8 unitofmeasure = 'CM'
+)
+( id = '2' idh = '005638984K-7' name = 'Keyboard Wrist Rest' description = 'Gel padding for comfort' releasedate = '20151115' discontinueddate = '20230115' price = 15000 currency_code = 'USD' height = 3 width = 6 depth = 10 quantity = 12 unitofmeasure =
 'CM' )
-( id = 1 idh = '005638984K-20' name = 'Air Purifier' description = 'HEPA filter for offices' releasedate = '20210110' discontinueddate = '20220214' price = 180000 currency_code = 'USD' height = 50 width = 30 depth = 30 quantity = 3 unitofmeasure = 'CM' )
+( id = '3' idh = '005638984K-7' name = 'Keyboard Cleaner Kit' description = 'Brush and cleaning ' releasedate = '20170305' discontinueddate = '20230520' price = 8000 currency_code = 'USD' height = 5 width = 5 depth = 5 quantity = 25 unitofmeasure =
+'CM' )
+( id = '1' idh = '005638984K-8' name = 'Ergonomic Keyboard' description = 'Wireless keyboard' releasedate = '20141010' discontinueddate = '20221201' price = 50000 currency_code = 'USD' height = 12 width = 6 depth = 10 quantity = 8 unitofmeasure = 'CM'
+)
+( id = '2' idh = '005638984K-8' name = 'Keyboard Wrist Rest' description = 'Gel padding for comfort' releasedate = '20151115' discontinueddate = '20230115' price = 15000 currency_code = 'USD' height = 3 width = 6 depth = 10 quantity = 12 unitofmeasure =
+'CM' )
+( id = '1' idh = '005638984K-9' name = 'Ergonomic Keyboard' description = 'Wireless keyboard ' releasedate = '20141010' discontinueddate = '20221201' price = 50000 currency_code = 'USD' height = 12 width = 6 depth = 10 quantity = 8 unitofmeasure = 'CM' )
+( id = '2' idh = '005638984K-9' name = 'Keyboard Wrist Rest' description = 'Gel padding for comfort' releasedate = '20151115' discontinueddate = '20230115' price = 15000 currency_code = 'USD' height = 3 width = 6 depth = 10 quantity = 12 unitofmeasure =
+'CM' )
+( id = '3' idh = '005638984K-9' name = 'Keyboard Cleaner Kit' description = 'Brush and cleaning ' releasedate = '20170305' discontinueddate = '20230520' price = 8000 currency_code = 'USD' height = 5 width = 5 depth = 5 quantity = 25 unitofmeasure =
+'CM' )
+( id = '1' idh = '005638984K-10' name = 'Ergonomic Keyboard' description = 'Wireless keyboard' releasedate = '20141010' discontinueddate = '20221201' price = 50000 currency_code = 'USD' height = 12 width = 6 depth = 10 quantity = 8 unitofmeasure = 'CM' )
+( id = '2' idh = '005638984K-10' name = 'Keyboard Wrist Rest' description = 'Gel padding for comfort' releasedate = '20151115' discontinueddate = '20230115' price = 15000 currency_code = 'USD' height = 3 width = 6 depth = 10 quantity = 12 unitofmeasure =
+'CM' )
+( id = '1' idh = '005638984K-18' name = 'Monitor Privacy Shield' description = 'Dual screen protector' releasedate = '20220518' discontinueddate = '20211115' price = 15000 currency_code = 'USD' height = 24 width = 5 depth = 24 quantity = 6 unitofmeasure =
+'CM' )
+( id = '1' idh = '005638984K-17' name = 'Ergonomic Keyboard' description = 'Wireless keyboard' releasedate = '20141010' discontinueddate = '20221201' price = 50000 currency_code = 'USD' height = 12 width = 6 depth = 10 quantity = 8 unitofmeasure = 'CM' )
+( id = '1' idh = '005638984K-19' name = 'Ergonomic Keyboard' description = 'Wireless keyboard' releasedate = '20141010' discontinueddate = '20221201' price = 50000 currency_code = 'USD' height = 12 width = 6 depth = 10 quantity = 8 unitofmeasure = 'CM' )
+( id = '1' idh = '005638984K-20' name = 'Ergonomic Keyboard' description = 'Wireless keyboard' releasedate = '20141010' discontinueddate = '20221201' price = 50000 currency_code = 'USD' height = 12 width = 6 depth = 10 quantity = 8 unitofmeasure = 'CM' )
 ).
-*    DELETE FROM zitems_7184.
-*    INSERT zitems_7184 FROM TABLE @lt_items.
+*   DELETE FROM zitems_7184.
+*   INSERT zitems_7184 FROM TABLE @lt_items.
 *
 *    IF sy-subrc EQ 0.
 *      out->write( |ITEMS: { sy-dbcnt } registros insertados| ).

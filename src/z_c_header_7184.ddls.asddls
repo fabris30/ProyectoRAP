@@ -6,20 +6,50 @@
 @Search.searchable: true
 
 
-define root view entity Z_C_HEADER_7184 
-provider contract transactional_query
-as projection on Z_R_HEADER_7184
+define root view entity Z_C_HEADER_7184
+  provider contract transactional_query
+  as projection on Z_R_HEADER_7184
 {
-    key Idh,
-    Email,
-     @Search.defaultSearchElement: true
-    Firstname,
-    Lastname,
-    Country,
-    Createon,
-    Deliverydate,
-    Orderstatus,
-    Imageurl,
-    /* Associations */
-    _Items: redirected to composition child Z_C_ITEMS_7184
+
+      @Search.defaultSearchElement: true
+      @Consumption.valueHelpDefinition: [{
+           entity : {name: 'Z_R_HEADER_7184',
+                     element: 'Idh'},
+                     useForValidation: true }]
+  key Idh,
+      Email,
+
+      @Search.defaultSearchElement: true
+      @Consumption.valueHelpDefinition: [{
+           entity : {name: 'Z_R_HEADER_7184',
+                     element: 'Firstname'},
+                     useForValidation: true }]
+      Firstname,
+      Lastname,
+
+      @Search.defaultSearchElement: true
+      @Consumption.valueHelpDefinition: [{
+           entity : {name: 'Z_R_HEADER_7184',
+                     element: 'Country'},
+                     useForValidation: true }]
+      Country,
+
+      @Search.defaultSearchElement: true
+      @Consumption.valueHelpDefinition: [{
+           entity : {name: 'Z_R_HEADER_7184',
+                     element: 'Createon'},
+                     useForValidation: true }]
+      Createon,
+      Deliverydate,
+      @Search.defaultSearchElement: true  
+       //@ObjectModel.text.element: [ 'Orderstatus' ]
+      @Consumption.valueHelpDefinition: [{
+           entity : {name: 'Z_R_HEADER_7184',
+                     element: 'Orderstatus'},
+                     useForValidation: true }]
+                           
+      Orderstatus,
+      Imageurl,
+      /* Associations */
+      _Items : redirected to composition child Z_C_ITEMS_7184
 }

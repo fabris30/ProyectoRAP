@@ -1,11 +1,16 @@
 @Metadata.layer: #CORE
 @UI: { headerInfo: { typeName: 'Header',
                      typeNamePlural: 'Headers',
+                     imageUrl: 'Imageurl',
                      title: {
                           type: #STANDARD,
-                          value: 'Idh'} }
-                           }
-       
+                          value: 'Firstname'},
+                    description: {
+                          type: #STANDARD,
+                          value: 'Idh'
+                                      }}}
+
+
 
 annotate entity Z_C_HEADER_7184 with
 {
@@ -22,39 +27,45 @@ annotate entity Z_C_HEADER_7184 with
               targetElement: '_Items',
               position: 20 } ]
   @UI: { lineItem: [{ position: 18, importance: #HIGH } ],
-   identification: [{ position: 18  }] }
+   identification: [{ position: 18  }],
+   selectionField: [{ position: 20 }] }
   Idh;
-  
-   @UI: { lineItem: [{ position: 20, importance: #HIGH } ],
-   identification: [{ position: 20  }] }
+
+  @UI: { lineItem: [{ position: 20, importance: #HIGH } ],
+  identification: [{ position: 20  }] }
   Email;
-  
-   @UI: { lineItem: [{ position: 30, importance: #HIGH } ],
-   identification: [{ position: 30  }] }
+
+  @UI: { lineItem: [{ position: 30, importance: #HIGH } ],
+  identification: [{ position: 30  }],
+  selectionField: [{ position: 30 }] }
   Firstname;
-  
-  
+
+
   @UI: { lineItem: [{ position: 40, importance: #MEDIUM } ],
    identification: [{ position: 40  }] }
   Lastname;
-  
-  @UI: { lineItem: [{ position: 50, importance: #MEDIUM } ],
+
+  @UI: { lineItem: [{ position: 50, importance: #HIGH } ],
    identification: [{ position: 50  }] }
   Country;
-  
+
   @UI: { lineItem: [{ position: 60, importance: #HIGH } ],
-   identification: [{ position: 60  }] }
+   identification: [{ position: 60  }],
+   selectionField: [{ position: 40 }] }
   Createon;
-  
+
   @UI: { lineItem: [{ position: 70, importance: #MEDIUM } ],
    identification: [{ position: 70  }] }
   Deliverydate;
-  
-  
-  @UI: { lineItem: [{ position: 80, importance: #HIGH } ],
-   identification: [{ position: 80  }] }
+
+
+  @UI: { lineItem: [{ position: 80, importance: #HIGH, criticality: 'Orderstatus' } ],
+   identification: [{ position: 80  }],
+   selectionField: [{ position: 50 }]
+    }
+
   Orderstatus;
-  
+
   @UI.hidden: true
   Imageurl;
 }
