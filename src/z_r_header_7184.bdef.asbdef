@@ -10,7 +10,7 @@ authorization master ( instance )
   create ( authorization : global );
   update;
   delete;
-  field ( readonly: update ) Idh;
+  field ( mandatory: create, readonly: update ) Idh;
   field ( mandatory ) Email;
   association _Items { create; }
 
@@ -26,7 +26,7 @@ authorization dependent by _Header
   update;
   delete;
   field ( readonly: update ) Id;
-  field ( readonly ) Idh;
+  field ( readonly: update ) Idh;
   association _Header;
 
   mapping for zitems_7184

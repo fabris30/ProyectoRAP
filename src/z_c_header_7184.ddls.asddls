@@ -41,8 +41,7 @@ define root view entity Z_C_HEADER_7184
                      useForValidation: true }]
       Createon,
       Deliverydate,
-      @Search.defaultSearchElement: true  
-       //@ObjectModel.text.element: [ 'Orderstatus' ]
+      @Search.defaultSearchElement: true 
       @Consumption.valueHelpDefinition: [{
            entity : {name: 'Z_R_HEADER_7184',
                      element: 'Orderstatus'},

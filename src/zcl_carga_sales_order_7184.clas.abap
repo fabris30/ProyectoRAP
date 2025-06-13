@@ -106,7 +106,7 @@ METHOD if_oo_adt_classrun~main.
 *   DELETE FROM zheader_7184.
 *   INSERT zheader_7184 FROM TABLE @lt_headers.
 *
-*   if sy-subrc eq 0.
+*  if sy-subrc eq 0.
 *     out->write( |SALES: { sy-dbcnt } registros insertados| ).
 *   endif.
 

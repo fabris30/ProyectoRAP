@@ -11,7 +11,6 @@ composition [1..*] of Z_R_ITEMS_7184 as _Items
     country as Country,
     createon as Createon,
     deliverydate as Deliverydate,
-    
     orderstatus as Orderstatus,
     
     imageurl as Imageurl,
