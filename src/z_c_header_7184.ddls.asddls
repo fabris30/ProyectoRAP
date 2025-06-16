@@ -13,7 +13,7 @@ define root view entity Z_C_HEADER_7184
 
       @Search.defaultSearchElement: true
       @Consumption.valueHelpDefinition: [{
-           entity : {name: 'Z_R_HEADER_7184',
+           entity : {name: 'Z_C_HEADER_7184',
                      element: 'Idh'},
                      useForValidation: true }]
   key Idh,
@@ -21,29 +21,29 @@ define root view entity Z_C_HEADER_7184
 
       @Search.defaultSearchElement: true
       @Consumption.valueHelpDefinition: [{
-           entity : {name: 'Z_R_HEADER_7184',
-                     element: 'Firstname'},
-                     useForValidation: true }]
+          entity : {name: 'Z_C_HEADER_7184',
+                    element: 'Firstname'}
+                      }]
       Firstname,
       Lastname,
 
       @Search.defaultSearchElement: true
       @Consumption.valueHelpDefinition: [{
-           entity : {name: 'Z_R_HEADER_7184',
-                     element: 'Country'},
-                     useForValidation: true }]
+           entity : {name: 'Z_C_HEADER_7184',
+                     element: 'Country'}
+                      }]
       Country,
 
       @Search.defaultSearchElement: true
       @Consumption.valueHelpDefinition: [{
-           entity : {name: 'Z_R_HEADER_7184',
-                     element: 'Createon'},
-                     useForValidation: true }]
+           entity : {name: 'Z_C_HEADER_7184',
+                     element: 'Createon'}
+                      }]
       Createon,
       Deliverydate,
       @Search.defaultSearchElement: true 
       @Consumption.valueHelpDefinition: [{
-           entity : {name: 'Z_R_HEADER_7184',
+           entity : {name: 'Z_C_HEADER_7184',
                      element: 'Orderstatus'},
                      useForValidation: true }]
                            

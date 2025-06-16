@@ -41,8 +41,8 @@ annotate entity Z_C_ITEMS_7184
    identification: [{ position: 50  }] }  
  Price;             
  
- @UI.hidden: true
- CurrencyCode;
+ 
+// CurrencyCode;
  
  @UI: { lineItem: [{ position: 60, importance: #HIGH } ],
    identification: [{ position: 60  }] }  
@@ -60,7 +60,7 @@ Depth;
    identification: [{ position: 90  }] }  
 Quantity;
 
-@UI.hidden: true
-Unitofmeasure;
+
+//Unitofmeasure;
     
 }

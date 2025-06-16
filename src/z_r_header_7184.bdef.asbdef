@@ -10,9 +10,22 @@ authorization master ( instance )
   create ( authorization : global );
   update;
   delete;
-  field ( mandatory: create, readonly: update ) Idh;
-  field ( mandatory ) Email;
+  field ( mandatory : create, readonly : update ) Idh;
+  field ( mandatory : create ) Email;
   association _Items { create; }
+
+  mapping for zheader_7184
+    {
+      Idh          = idh;
+      Email        = email;
+      Firstname    = firstname;
+      Lastname     = lastname;
+      Country      = country;
+      Createon     = createon;
+      Deliverydate = deliverydate;
+      Orderstatus  = orderstatus;
+      Imageurl     = imageurl;
+    }
 
 }
 
@@ -25,8 +38,8 @@ authorization dependent by _Header
 {
   update;
   delete;
-  field ( readonly: update ) Id;
-  field ( readonly: update ) Idh;
+  field ( readonly : update, mandatory : create ) Id;
+  field ( readonly : update ) Idh;
   association _Header;
 
   mapping for zitems_7184
