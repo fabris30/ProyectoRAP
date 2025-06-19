@@ -4,7 +4,7 @@ CLASS zcl_carga_sales_order_7184 DEFINITION
   CREATE PUBLIC .
 
   PUBLIC SECTION.
-  INTERFACES if_oo_adt_classrun.
+    INTERFACES if_oo_adt_classrun.
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
@@ -13,10 +13,25 @@ ENDCLASS.
 
 CLASS zcl_carga_sales_order_7184 IMPLEMENTATION.
 
-METHOD if_oo_adt_classrun~main.
+  METHOD if_oo_adt_classrun~main.
 
     DATA: lt_ITEMS   TYPE TABLE OF zitems_7184,
-          lt_HEADERS TYPE TABLE OF zheader_7184.
+          lt_HEADERS TYPE TABLE OF zheader_7184,
+          lt_Status  TYPE TABLE OF zstatusv_7184.
+
+    lt_status = VALUE #(
+
+    ( overall_status = 1 overall_status_tex = 'Canceled' )
+    ( overall_status = 2 overall_status_tex = 'In Process' )
+    ( overall_status = 3 overall_status_tex = 'Delivered' )
+
+    ).
+*       DELETE FROM zstatusv_7184.
+*   INSERT zstatusv_7184 FROM TABLE @lt_status.
+*
+*    IF sy-subrc EQ 0.
+*      out->write( |STATUS: { sy-dbcnt } registros insertados| ).
+*    ENDIF.
 
     lt_ITEMS = VALUE #(
 

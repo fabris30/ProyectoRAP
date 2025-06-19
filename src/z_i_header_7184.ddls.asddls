@@ -15,5 +15,6 @@ as projection on Z_R_HEADER_7184
     Orderstatus,
     Imageurl,
     /* Associations */
-    _Items: redirected to composition child Z_I_ITEMS_7184
+    _Items: redirected to composition child Z_I_ITEMS_7184,
+    _OrderStatusV
 }

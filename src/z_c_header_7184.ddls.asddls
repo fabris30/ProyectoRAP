@@ -14,8 +14,8 @@ define root view entity Z_C_HEADER_7184
       @Search.defaultSearchElement: true
       @Consumption.valueHelpDefinition: [{
            entity : {name: 'Z_C_HEADER_7184',
-                     element: 'Idh'},
-                     useForValidation: true }]
+                     element: 'Idh'}
+                     }]
   key Idh,
       Email,
 
@@ -41,14 +41,18 @@ define root view entity Z_C_HEADER_7184
                       }]
       Createon,
       Deliverydate,
+      
+      @ObjectModel.text.element: [ 'OverallStatusTex' ]
       @Search.defaultSearchElement: true 
       @Consumption.valueHelpDefinition: [{
-           entity : {name: 'Z_C_HEADER_7184',
-                     element: 'Orderstatus'},
+           entity : {name: 'Z_R_STATUSV_7184',
+                     element: 'OverallStatus'},
                      useForValidation: true }]
                            
       Orderstatus,
+      _OrderStatusV.OverallStatusTex as OverallStatusTex,
       Imageurl,
       /* Associations */
-      _Items : redirected to composition child Z_C_ITEMS_7184
+      _Items : redirected to composition child Z_C_ITEMS_7184,
+      _OrderStatusV
 }

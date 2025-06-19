@@ -22,8 +22,7 @@ annotate entity Z_C_ITEMS_7184
    identification: [{ position: 10  }]}               
  Id;
  
- @UI.hidden: true
- Idh;
+
  
  @UI: { lineItem: [{ position: 20, importance: #HIGH } ],
    identification: [{ position: 20  }] }  
