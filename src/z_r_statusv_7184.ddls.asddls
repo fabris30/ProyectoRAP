@@ -7,8 +7,14 @@
     sizeCategory: #S,
     dataClass: #MIXED
 }
-define view entity Z_R_STATUSV_7184 as select from zstatusv_7184
+@ObjectModel.resultSet.sizeCategory: #XS
+define view entity Z_R_STATUSV_7184
+  as select from zstatusv_7184
 {
-    key overall_status as OverallStatus,
-    overall_status_tex as OverallStatusTex
+      @UI.textArrangement: #TEXT_ONLY
+      @UI.lineItem: [{importance: #HIGH}]
+      @ObjectModel.text.element: ['OverallStatusTex']
+  key overall_status     as OverallStatus,
+      @Semantics.text: true
+      overall_status_tex as OverallStatusTex
 }
